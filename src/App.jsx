@@ -5,6 +5,8 @@ function App() {
   const [categories, setCategories] = useState(['One Punch', 'Dragon Ball']);
 
   const addCategories = (newCategory) => {
+    if (categories.includes(newCategory)) return;
+
     setCategories([...categories, newCategory]);
   };
 
