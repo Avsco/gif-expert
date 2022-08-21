@@ -17,7 +17,7 @@ export const AddCategory = ({ onAddCategories }) => {
   };
 
   return (
-    <form style={{ display: 'flex', gap: 16 }} onSubmit={handleSubmit}>
+    <form style={{ display: 'flex', gap: 16 }} onSubmit={handleSubmit} aria-label='form'>
       <input placeholder='Buscar gifs' value={inputValue} onChange={handleInputChange} />
       <button type='submit'>Agregar</button>
     </form>
